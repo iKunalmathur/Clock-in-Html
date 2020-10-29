@@ -8,8 +8,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Open Sans',
- sans-serif;
+  font-family: 'Open Sans', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,15 +20,15 @@ body {
           align-items: center;
   height: 100vh;
   background-color: #f86c3a;
-  -webkit-filter: invert(1) hue-rotate(180deg);
-          filter: invert(1) hue-rotate(180deg);
   position: relative;
 }
 
 .clock {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+          filter: invert(1) hue-rotate(180deg);
   width: 400px;
   height: 400px;
-  background-image: url("./images/clock1.png");
+  background-image: url("../../images/clock1.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
@@ -123,10 +122,14 @@ body {
   background-color: #2A2B2DFF;
 }
 
-.label {
+.labels {
   position: absolute;
   bottom: 1%;
   right: 1%;
+}
+
+.labels a {
+  text-decoration: none;
 }
 
 @media only screen and (min-width: 1224px) {

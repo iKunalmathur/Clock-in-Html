@@ -15,14 +15,14 @@ body{
     align-items: center;
     height: 100vh;
     background-color:  rgb(248, 108, 58);
-    filter: invert(1) hue-rotate(180deg);
     position: relative;
 }
 
 .clock{
+    filter: invert(1) hue-rotate(180deg);
     width: 400px;
     height: 400px;
-    background-image: url('./images/clock1.png');
+    background-image: url('../../images/clock1.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -113,10 +113,13 @@ body{
     }
 }
 
-.label{
+.labels{
     position: absolute;
     bottom: 1%;
     right: 1%;
+    a{
+        text-decoration: none;
+    }
 }
 
 @media only screen and (min-width : 1224px) {

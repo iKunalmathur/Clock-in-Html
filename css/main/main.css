@@ -8,7 +8,8 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans',
+ sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +29,7 @@ body {
 .clock {
   width: 400px;
   height: 400px;
-  background-image: url("/images/clock1.png");
+  background-image: url("./images/clock1.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;

@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  background-color: #f86c3a;
+  -webkit-filter: invert(1) hue-rotate(180deg);
+          filter: invert(1) hue-rotate(180deg);
+  position: relative;
+}
+
+.clock {
+  width: 400px;
+  height: 400px;
+  background-image: url("/images/clock1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.clock::before {
+  content: '';
+  position: absolute;
+  background-color: #494949;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.date {
+  position: absolute;
+  z-index: 0;
+  bottom: 47.5%;
+  right: 60%;
+  color: #333;
+  border: #747474 2px solid;
+  border-radius: 15px;
+  padding: .3em;
+  font-size: 0.6rem;
+}
+
+.clock .hour, .clock .minute, .clock .second {
+  position: absolute;
+}
+
+.clock .hr, .clock .min, .clock .sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.clock .hour .hr {
+  width: 1.5em;
+  height: 14em;
+}
+
+.clock .hour .hr::before {
+  content: '';
+  position: absolute;
+  width: .7em;
+  height: 7em;
+  border-radius: 20px;
+  background-color: #2DA8D8FF;
+}
+
+.clock .minute .min {
+  width: 2em;
+  height: 16em;
+}
+
+.clock .minute .min::before {
+  content: '';
+  position: absolute;
+  width: .5em;
+  height: 8em;
+  border-radius: 20px;
+  background-color: #D9514EFF;
+}
+
+.clock .second .sec {
+  width: 2.5em;
+  height: 18em;
+}
+
+.clock .second .sec::before {
+  content: '';
+  position: absolute;
+  width: .1em;
+  height: 11em;
+  border-radius: 20px;
+  background-color: #2A2B2DFF;
+}
+
+.label {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}
+
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  .clock {
+    scale: 1.5;
+  }
+}
+/*# sourceMappingURL=main.css.map */

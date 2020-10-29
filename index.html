@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Remove 'initial-scale=1.0' to disable Zoom--> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Clock-HTML</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/favicons/favicon.png" type="image/x-icon"> 
+    <link rel="apple-touch-icon" href="./images/favicons/favicon.png">
+    <!-- /favicon -->
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/main/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- /stylesheet -->
+</head>
+<body>
+    <div class="clock">
+        <div class="hour">
+            <div class="hr" id="hr"></div>
+        </div>
+        <div class="minute">
+            <div class="min" id="min"></div>
+        </div>
+        <div class="second">
+            <div class="sec" id="sec"></div>
+        </div>
+        <div class="date" id="date">
+            --- -- -- ---
+        </div>
+    </div>
+    <a href="https://devsolo.tech/" class="label" target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="40" viewBox="0 0 92 40">
+    <defs>
+        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#8f8f8f"/>
+        <stop offset="0.992" stop-color="#222326"/>
+        <stop offset="1" stop-color="#333"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="0.55" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+        <stop offset="0" stop-color="#fff"/>
+        <stop offset="1" stop-color="#858585"/>
+        </linearGradient>
+    </defs>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="92" height="40" rx="5" fill="url(#linear-gradient)"/>
+    <text id="Powered_by" data-name="Powered by" transform="translate(7 15)" fill="#fff" font-size="12" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Powered by</tspan></text>
+    <text id="Devsolo" transform="translate(29 33)" fill="#efefef" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Devsolo</tspan></text>
+    <path id="Icon_awesome-code" data-name="Icon awesome-code" d="M9.229,16.93l-2.019-.586a.4.4,0,0,1-.271-.493L11.457.289A.4.4,0,0,1,11.95.018L13.969.6a.4.4,0,0,1,.271.493L9.723,16.658a.4.4,0,0,1-.493.271ZM5.457,13.216,6.9,11.681a.4.4,0,0,0-.026-.569l-3-2.638,3-2.638A.394.394,0,0,0,6.9,5.267L5.457,3.731a.4.4,0,0,0-.563-.017L3.71,4.823.125,8.183a.4.4,0,0,0,0,.579l4.769,4.471a.4.4,0,0,0,.563-.017Zm10.829.02,4.769-4.471a.4.4,0,0,0,0-.579L16.285,3.711a.4.4,0,0,0-.563.017l-1.44,1.536a.4.4,0,0,0,.026.569l3,2.641-3,2.638a.394.394,0,0,0-.026.569l1.44,1.536a.4.4,0,0,0,.563.02Z" transform="translate(6.502 19.999)" fill="url(#linear-gradient-2)"/>
+    </svg>
+    </a>
+    <script src="/js/index.js"></script>
+</body>
+</html>
